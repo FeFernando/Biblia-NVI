@@ -1,0 +1,134 @@
+body {
+  font-family: "Noto Sans", system-ui;
+  height: 500px;
+  width: 500px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 20px;
+}
+
+.card {
+  background-color: #f1f1f1;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  text-align: center;
+  width: 150px;
+  transition: transform 0.3s;
+  transition-duration: 0.4s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  background-image: linear-gradient(160deg, #fab114 0%, #fc8604 100%);
+  
+  color: white;
+}
+
+#verses-container {
+  margin: 20px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  background-color: #0093E9;
+  background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+  color: white;
+}
+
+.menu-toggle {
+  font-size: 24px;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #333;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  color: white;
+}
+
+.sidebar nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar nav ul li {
+  padding: 0px 0px;
+  text-align: left;
+}
+
+
+
+.sideButons {
+  width: 100%;
+  height: 30px;
+  background-color: #f1f1f1;
+  padding: 20px;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  text-align: center;
+  
+  transition: transform 0.3s;
+  transition-duration: 0.4s;
+}
+
+.sideButons:hover {
+  background-image: linear-gradient(160deg, #fab114 0%, #fc8604 100%);
+  
+  color: white;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 36px;
+  cursor: pointer;
+}
+
+#content {
+  padding: 20px;
+}
+
+
+#comment-popup {
+  width: 150px;
+  height: 100px;
+  position: absolute;
+  background: #fff;
+  border: 1px solid #ccc;
+ 
+  z-index: 1000;
+}
+
+.comment-style{
+  padding: 20px;
+  margin: 10px;
+  border: 1px solid black;
+}
+
+.comment-style .highlight {
+  border: 1px solid rgb(0, 202, 185);
+  
+}
